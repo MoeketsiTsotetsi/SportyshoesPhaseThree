@@ -1,0 +1,20 @@
+create database sportsshoes;
+use sportsshoes;
+
+create table product(p_id int primary key auto_increment,p_name varchar(50) not null,
+price float not null,quantity int not null,url blob not null,category varchar(25));
+
+create table user(email_Id varchar(35) primary key,name varchar(35) not null,
+password varchar(25) not null,
+user_Type varchar(25) not null);
+
+create table tblorder(order_Id int primary key auto_increment,
+quantity int not null,
+o_date  DATETIME ,
+status varchar(25) not null,
+pro_id int,eid varchar(35),
+ FOREIGN KEY (pro_id) REFERENCES product (p_id),
+ FOREIGN KEY (eid) REFERENCES user (email_Id));
+ 
+ insert into user values("admin@Sportyshoes.com","admin","admin","admin");
+

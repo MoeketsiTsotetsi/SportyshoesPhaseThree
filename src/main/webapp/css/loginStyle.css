@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+
+.container{
+	margin-top: 5rem;
+	border-style: groove;
+	width: 60%;
+	border-radius: .6rem;
+}
+
+#email,#password,#name{
+	margin-left: 14rem;
+	width: 50%;
+}
+
+
+
+.btn{
+	margin-bottom: 3rem;
+}

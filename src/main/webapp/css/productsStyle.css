@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.container{
+	margin-top: 1rem;
+}
+.card{
+	margin-top: 2rem;
+	display:inline-block;
+	margin-right: 2rem;
+}
